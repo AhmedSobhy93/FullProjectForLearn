@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/SV">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ahmed.calculator.Main_Activity"
+    style="@android:style/Theme.Holo"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/secondPage_Calculator_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculator"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/Main_AutoCompText_Button"
+        android:layout_alignEnd="@+id/Main_AutoCompText_Button" />
+
+    <Button
+        android:id="@+id/ListView_Menus_Button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondPage_Calculator_button"
+        android:layout_centerHorizontal="true"
+        android:text="Menus" />
+
+    <Button
+        android:id="@+id/ListView_Gender_Button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ListView_Menus_Button"
+        android:layout_centerHorizontal="true"
+        android:text="Spinner_Gender" />
+
+    <Button
+        android:id="@+id/Main_SharedPref_Button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ListView_Gender_Button"
+        android:layout_centerHorizontal="true"
+        android:text="Shared_Preferance" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="List_View"
+        android:id="@+id/Main_ListView_Button"
+        android:layout_below="@+id/Main_SharedPref_Button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="RadioButton"
+        android:id="@+id/Main_RadioBtn_Button"
+        android:layout_below="@+id/Main_ListView_Button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        android:id="@+id/Main_CheckBox_Button"
+        android:layout_below="@+id/Main_RadioBtn_Button"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Rating Bar"
+        android:id="@+id/Main_RatingBar_Button"
+        android:layout_below="@+id/Main_CheckBox_Button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Progress Bar"
+        android:id="@+id/Main_ProgressBar_Button"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="AutoComplete Text"
+        android:id="@+id/Main_AutoCompText_Button"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/Main_Notification_Button"
+        android:layout_toEndOf="@+id/Main_Notification_Button" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification"
+        android:id="@+id/Main_Notification_Button"
+        android:layout_alignBaseline="@+id/Main_AutoCompText_Button"
+        android:layout_alignBottom="@+id/Main_AutoCompText_Button" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Camera"
+        android:id="@+id/Main_Camera_Button"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/Main_Notification_Button"
+        android:layout_toEndOf="@+id/Main_Notification_Button" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Maps"
+        android:id="@+id/Main_Maps_Button"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Maps1"
+        android:id="@+id/Main_Maps1_Button"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Employee"
+        android:id="@+id/MainActivity_AddEmployee_Button"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Employee"
+        android:id="@+id/MainActivity_ShowEmp_Button"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Audio"
+        android:id="@+id/Main_Audio_Button"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Employee Name Search 1"
+        android:id="@+id/Main_SearchName1_Button"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Emplyee Name Search2"
+        android:id="@+id/Main_SearchName2_Button"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>
+</ScrollView>

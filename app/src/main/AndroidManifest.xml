@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ahmed.calculator"
+    android:installLocation="preferExternal">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Calculator"
+            android:label="@string/title_activity_Calculator" >
+        </activity>
+        <activity
+            android:name=".Main_Activity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menus"
+            android:label="@string/title_activity_menus" >
+        </activity>
+        <activity
+            android:name=".Spinner"
+            android:label="@string/title_activity_spinner" >
+        </activity>
+        <activity
+            android:name=".SharedPreferances"
+            android:label="@string/title_activity_shared_preferances" >
+        </activity>
+        <activity
+            android:name=".List_View"
+            android:label="@string/title_activity_list__view" >
+        </activity>
+        <activity
+            android:name=".Radio_Button"
+            android:label="@string/title_activity_radio__button" >
+        </activity>
+        <activity
+            android:name=".Check_Box"
+            android:label="@string/title_activity_check__box" >
+        </activity>
+        <activity
+            android:name=".Rating_Bar"
+            android:label="@string/title_activity_rating__bar" >
+        </activity>
+        <activity
+            android:name=".Progress_Bar"
+            android:label="@string/title_activity_progress__bar" >
+        </activity>
+        <activity
+            android:name=".AutoComplete_Text"
+            android:label="@string/title_activity_auto_complete__text" >
+        </activity>
+        <activity
+            android:name=".Notification"
+            android:label="@string/title_activity_notification" >
+        </activity>
+        <activity
+            android:name=".CameraPage"
+            android:label="@string/title_activity_camera" >
+        </activity>
+
+        <receiver
+            android:name=".MyReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" >
+                </action>
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" >
+        </activity>
+        <activity
+            android:name=".AddEmployee"
+            android:label="@string/title_activity_add_employee" >
+        </activity>
+        <activity
+            android:name=".ShowEmployee"
+            android:label="@string/title_activity_show_employee" >
+        </activity>
+        <activity
+            android:name=".Audio"
+            android:label="@string/title_activity_audio" >
+        </activity>
+        <activity
+            android:name=".MapsActivity1"
+            android:label="@string/title_activity_maps_activity1" >
+        </activity>
+        <activity
+            android:name=".SearchAboutEmployeeByName1"
+            android:label="@string/title_activity_search_about_employee_by_name" >
+        </activity>
+        <activity
+            android:name=".SearchAboutEmployeeByName2"
+            android:label="@string/title_activity_search_about_employee_by_name2" >
+        </activity>
+    </application>
+
+</manifest>
