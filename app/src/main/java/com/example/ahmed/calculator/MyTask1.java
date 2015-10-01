@@ -56,7 +56,9 @@ public class MyTask1 extends AsyncTask<String , String , String> {
         try{
 
             HttpClient client = new DefaultHttpClient();
-            HttpPost request = new HttpPost("http://x-doc.org/api1/Identity/authenticate");
+            HttpPost request = new HttpPost("
+            //URL here
+            ");
 
             JSONObject json = new JSONObject();
             json.put("Email", params[0]);
